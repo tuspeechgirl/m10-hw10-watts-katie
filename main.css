@@ -6,3 +6,24 @@
   opacity: 1;
   transition: opacity 1s;
 }
+body{
+  background: url("img/winter.jpg");
+  background-size: cover;
+  color: #42687C;
+  font-family: 'Dosis', sans-serif;
+}
+.container{
+  float:right !important;
+  padding-right: 50px;
+
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
