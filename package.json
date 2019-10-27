@@ -1,7 +1,7 @@
 {
   "name": "m10-hw10-watts-katie",
   "version": "1.0.0",
-  "description": "hw19",
+  "description": "hw10",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
