@@ -2,7 +2,7 @@
 let tmp= 212;
 hot = () => {
 
-var w= document.getElementById('boiling');
+var w= document.getElementById('boiling-temp');
 var textnode1 = document.createTextNode(tmp);
 w.appendChild(textnode1)
 }
@@ -26,16 +26,30 @@ y.appendChild(textnode3)
 }
 window.addEventListener("load", myTemp)
 
-change = function() {
-var w= document.getElementById('boiling');
 
+
+change = () => { }
 var y= document.getElementById('water-temp');
-  if (tmp3 > 212) {
-    y.classList.remove('hide');
-  } else {
-    setTimeout(function() {
-      w.classList.add('show');
-    }, 3000);
+var a= document.getElementById('boiling');
+var b= document.getElementById('good-temp');
+var c = document.getElementById('frozen');
+
+
+
+  if (y.innerHTML < 32) {
+    a.remove('hide')
+    document.getElementById('freezing-temp').classList.add('frozen')
+
+
   }
-}
-window.addEventListener("load", change)
+  else if(y.innerHTML > 212){
+      c.remove('hide')
+  document.getElementById('boiling-temp').classList.add('boilng')
+    }
+    else {
+      b.remove('hide')
+          document.getElementById('water-temp').classList.add('good-temp')
+
+    }
+setTimeout(change, 3000);
+console.log(change);
